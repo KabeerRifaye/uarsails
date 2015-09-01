@@ -31,6 +31,7 @@ var jsFilesToInject = [
 
   // Load jQuery before all the scritps
   'js/jquery.min.js',
+  'js/jquery.validate.min.js',
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.

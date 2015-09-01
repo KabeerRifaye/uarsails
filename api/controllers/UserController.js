@@ -9,9 +9,7 @@ module.exports = {
 
 	// This loads the signup page. --> user/new.ejs
 	new: function(req, res){
-		res.locals.flash = _.clone(req.session.flash);
 		res.view();
-		req.session.flash = {};
 	},
 
 	//Create a new user
@@ -32,7 +30,6 @@ module.exports = {
 			// If the user is successfully created.
 			// res.json(user);
 			res.redirect('/user/show/'+user.id);
-			req.session.flash = {};
 		});
 	},
 
