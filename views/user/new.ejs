@@ -1,6 +1,16 @@
 <div class="container half-width">
 	<form action="/user/create" method="POST" class="form-horizontal">
 		<h2>Create an account</h2>
+		
+		<!-- Validation -->
+		<% if(flash && flash.err) { %>
+			<ul class="alert alert-danger">
+				<% Object.keys(flash.err).forEach(function(error) { %>
+					<li><% JSON.stringify(flash.err[error]) %></li>
+				<% }) %>
+			</ul>
+		<% } %>
+
 		<div class="form-group">
 			<label for="name" class="col-sm-2 control-label">Name</label>
 			<div class="col-sm-10">
