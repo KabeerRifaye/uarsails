@@ -29,14 +29,41 @@
     -->
 
     <!--STYLES-->
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/custom.css">
     <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
 
   <body>
+
+    <!--  -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">
+            UAR Sails
+          </a>
+        </div>
+      </div>
+    </nav>
+
     <%- body %>
 
-
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <hr>
+          <div>
+            <p class="text-muted">Designed and bulit by 
+              <a href="http://github.com/KabeerRifaye" target="_blank">@kabeer</a>
+              .
+            </p>
+          </div>
+      </div>
+    </footer>
 
     <!--
         Client-side Templates
@@ -89,6 +116,8 @@
 
     <!--SCRIPTS-->
     <script src="/js/dependencies/sails.io.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
